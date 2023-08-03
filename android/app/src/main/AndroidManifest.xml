@@ -2,7 +2,7 @@
     <application
         android:label="bmi_app"
         android:name="${applicationName}"
-        android:icon="@mipmap/school.jpg">
+        android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
             android:exported="true"

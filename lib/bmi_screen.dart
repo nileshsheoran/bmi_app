@@ -78,7 +78,7 @@ class _BmiScreenState extends State<BmiScreen> {
                   int totalInch = (feet * 12) + inch;
                   double cm = totalInch * 2.54;
                   double meter = cm / 100;
-                   bmi = weight / (meter * meter);
+                  bmi = weight / (meter * meter);
 
                   if (bmi < 18.5) {
                     Bmi = ("underWeight");
