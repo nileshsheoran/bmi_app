@@ -1,3 +1,4 @@
+import 'package:Bmi/string_const.dart';
 import 'package:flutter/material.dart';
 
 class BmiScreen extends StatefulWidget {
@@ -22,7 +23,7 @@ class _BmiScreenState extends State<BmiScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('BMI  Calculator'),
+        title:  const Text(StringConst.tittleText),
         backgroundColor: Colors.blue,
         leading: IconButton(
           icon: const Icon(Icons.menu),
@@ -40,7 +41,7 @@ class _BmiScreenState extends State<BmiScreen> {
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),
-                  hintText: 'Enter your feet',
+                  hintText: StringConst.hintFeetText,
                 ),
               ),
               const SizedBox(
@@ -52,7 +53,7 @@ class _BmiScreenState extends State<BmiScreen> {
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),
-                  hintText: 'Enter your inch',
+                  hintText: StringConst.hintInchText,
                 ),
               ),
               const SizedBox(
@@ -64,7 +65,7 @@ class _BmiScreenState extends State<BmiScreen> {
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),
-                  hintText: 'Enter your weight',
+                  hintText: StringConst.hintWeightText,
                 ),
               ),
               const SizedBox(
@@ -90,7 +91,7 @@ class _BmiScreenState extends State<BmiScreen> {
                   setState(() {});
                 },
                 child: const Text(
-                  'Calculate',
+                  StringConst.elevatedText,
                 ),
               ),
               const SizedBox(
